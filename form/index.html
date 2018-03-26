@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body onbeforeunload="confirmer()">
+
+    <div class="a">
+        Mes options:
+
+           <span>Mettre en exergue le paragraphe au click
+               <input id="exergue" type="checkbox"> </span>
+               <span> Taille de l'écriture : <input type="number" id="size" onchange="changertaille()"> </span>
+                   <span> Police : <SELECT name="police" size="1" id="police" onchange="changerPolice()">
+                             <OPTION>Arial
+                             <OPTION>Comic Sans MS
+                             <OPTION>new times roman
+                             <OPTION>Consolas
+                             </SELECT>
+                   </span>
+
+    </div>
+    <br><br>
+    <div class="a">
+        <p id="par1" onclick="MakeBig1()"> Bonjour paragraphe 1  <a onclick="" href="https://www.google.fr/">Google</a> </p>
+        <p id="par2" onclick="MakeBig2()"> Bonjour paragraphe 2 <a href="https://www.w3.org/">W3C</a></p>
+
+        <form  onsubmit="comment()">
+            <label for="Pseudo">Pseudo :</label>
+            <input type="text" id="Pseudo" size=15 maxlength=30 pattern="[a-z0-9]+">
+            *Le pseudo ne doit contenir que des letrres alphabétiques minuscule ou des chiffres
+            <br><br>
+            <label for="Mail">Email :</label>
+            <input id="Mail" type="email" size=15>
+            <br><br>
+            <label for="code_postal">Code Postal :</label>
+            <input id="code_postal" type="email" size=15>
+            <br><br>
+
+            <input type="submit" value="envoyer">
+            <input type="reset" value="reset">
+            <br><br><br><br>
+        </form>
+        <button id="commenter" onclick="comment()" >comment</button>
+        <br><br>
+        <textarea id="comment" rows="4" cols="50"> </textarea>
+
+    </div>
+    <br><br>
+    Comment Section
+    <div class="a" id="commentSection">
+
+
+    </div>
+
+
+<script src="ex.js"></script>
+</body>
+</html>

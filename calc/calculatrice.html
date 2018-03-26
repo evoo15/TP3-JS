@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatrice</title>
+</head>
+<body>
+	<h1 align="center">Calculatrice</h1>
+	<br>
+
+	<table border="3">
+		<tr>
+			<td colspan="2"><input type="number" id="val1"></td>
+			<td colspan="2"><input type="number" id="val2"></td>
+		</tr>
+
+		<tr>
+			<td align="center"><button onclick="addition()">+</button></td>
+			<td align="center"><button onclick="soustraction()">-</button></td>
+			<td align="center"><button onclick="multuplication()">*</button></td>
+			<td align="center"><button onclick="division()">/</button></td>
+		</tr>
+
+		<tr>
+			<td align="center"><button onclick="cosinus()">cos</button></td>
+			<td align="center"><button onclick="sinus()">sin</button></td>
+			<td align="center"><button onclick="exponentielle()">exp</button></td>
+			<td align="center"><button onclick="puissance()">x^y</button></td>
+		</tr>
+
+		<tr>
+			<td colspan="4" id="resultat"></td>
+		</tr>
+	</table>
+
+	<script src="calculatrice.js"></script>
+
+</body>
+</html>

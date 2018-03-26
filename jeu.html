@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cliquer pour commencer le jeu</h2>
+
+<button onclick="myFunction()">Jouer</button>
+
+<script>
+    var x= Math.floor(Math.random()*11) ;
+    var nb= 0 ;
+    console.log(x) ;
+    function myFunction(){
+        while (nb <3) {
+        var nombre = prompt("donner un nombre entre 0 et 10 : Essais restants " +(3-nb)) ;
+        nb++;
+        if (nombre==x)
+        {alert("Vous avez gagne !!") ;
+        location.reload() ;
+        break; }
+        } ;
+        if (nombre!=x) {
+            alert("Vous avez perdu :'( ") ;
+            location.reload() ;
+        }
+        }
+
+</script>
+
+</body>
+</html>
